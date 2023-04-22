@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BIZ+UDPMincho&family=Cinzel:wght@400;600&family=Cormorant+SC:wght@700&family=Dancing+Script&family=Italiana&family=Lobster&family=Major+Mono+Display&family=Marcellus&family=Noto+Serif+HK:wght@400;500;600;700;800;900&family=Qwigley&display=swap');
+
+.destacado
+
+:root {
+font-family: 'Abril Fatface', cursive;
+font-family: 'BIZ UDPMincho', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant SC', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Italiana', serif;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Marcellus', serif;
+font-family: 'Noto Serif HK', serif;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; }
+
+body {
+    background-color: #feefea; }
+
+header {
+    background-color: #feefea;
+    position: relative;
+    display: flex;    
+    filter: drop-shadow(0 0 20px #121212);
+}
+
+.brand {
+    position: relative;
+    right: 80px;
+    filter: drop-shadow(0 0 20px #121212);
+    height: 145px;
+}
+
+.brand_mobile {
+  display: none;
+  
+}
+
+
+header .flex-container ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 50px;
+    left: 50px;
+}
+
+header .flex-container ul .content {
+        display: flex;
+        height: 44px;
+        width: 140px;
+        font-size: 16px;
+        font-family: 'Cinzel', serif;
+        filter: drop-shadow(0 0 20px #121212);
+        margin: 1%; 
+      }
+
+header .flex-container ul .content:hover {
+    font-size: 23px;
+    transition: 0.6s ease;
+}
+
+header .flex-container ul .content .text {
+  color: black
+}
+
+
+.box_home_page {
+        position: relative;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+          }
+
+/*
+.box_home_page {
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    
+    text-transform: uppercase;
+    }
+*/
+
+
+.titulo_primero{
+      font-size: 35px;
+      font-family: 'Marcellus', serif;
+      color: black;
+      /*grid-column-start: 1;*/
+      /*grid-column-end: span 2;*/
+      /*text-align: center;*/
+      margin-top: 25px;
+      width: 100%;
+      text-transform: uppercase;
+      filter: drop-shadow(0 0 20px #121212);
+
+}
+    .titulo_home_page {
+      font-size: 20px;
+      font-family: 'BIZ UDPMincho', serif;
+      /*text-align: center;*/
+      /*grid-column: span 2;*/
+      max-width: 70%;
+      margin-left: 14%;
+      color:rgb(84, 84, 84);
+      filter: drop-shadow(0 0 20px #121212);
+      }
+
+.foto_inicio {
+        width: 30%;
+        height: auto;
+        border-radius: 12px;
+        /*grid-column-end: span 2;*/
+        filter: drop-shadow(0 0 20px #121212);
+      }
+
+.contenedor_botones{
+  position: relative;
+    width: 100%;
+    filter: drop-shadow(0 0 20px #121212);
+}
+      /*
+.contenedor_boton {
+      width: 25%;
+      }
+*/
+.contenedor_imagen_home_page{
+  width: 100%;
+}
+
+
+/*Boton Ver la Carta*/
+
+.bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/*Boton "como llegar" */
+.bn6 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;;
+}
+
+.bn6:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn6:active {
+  color: #000;
+}
+
+.bn6:active:after {
+  background: transparent;
+}
+
+.bn6:hover:before {
+  opacity: 1;
+}
+
+.bn6:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/*Boton "como llegar" */
+.bn7 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;
+  filter: drop-shadow(0 0 20px #121212);
+}
+
+.bn7:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn7:active {
+  color: #000;
+}
+
+.bn7:active:after {
+  background: transparent;
+}
+
+.bn7:hover:before {
+  opacity: 1;
+}
+
+.bn7:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.rating {
+  /*grid-column: span 2;*/
+  width: 100%;
+  filter: drop-shadow(0 0 20px #121212);
+}
+.text-muted{
+  font-size: 25px;
+}
+.stars{
+  font-size: 20px;
+  color: yellow;
+  filter: drop-shadow(0 0 20px #121212);
+}
+
+
+/*
+.like{
+  color: #00000030;
+  font-size: 2em;
+}
+
+.like i.fa-heart{
+  color: #f44336;
+}
+
+.heart {
+  animation: heart 0.5s linear;
+  color: orange;
+}
+
+@keyframes heart{
+  0%{
+    transform: rotate(0deg) scale(1.7);
+  }
+  40%{
+    transform: rotate(0deg) scale(1);
+  }
+  41%{
+    transform: rotate(360deg) scale(1);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+*/
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  }
+  
+.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 60px; 
+    
+}
+footer .footer_container {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    color: #0B0B0B;
+    filter: drop-shadow(0 0 20px #121212);
+    z-index: 30;
+    background-image: linear-gradient(#feefea, transparent);
+    font-family: 'Marcellus', serif;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+footer .footer_container .copyright {
+        padding-top: 6px;
+        /*background-color: #d6249f;*/
+        width: 30%;
+        font-size: 16px;
+        }
+footer .footer_container .redes {
+        text-align: center;
+        padding-top: 5px;
+        /*background-color: #fd5949;*/
+        width: 30%;
+    }
+footer .footer_container .redes .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 30%; }
+footer .footer_container .redes .titulo_footer {
+    font-size: 1.2rem; }
+
+
+
+
+main .titulo_como_llegar {
+    font-family: 'Marcellus', serif;
+    font-size: 35px;
+    text-align: center;
+    height: 100px;
+    margin-top: 50px;
+    filter: drop-shadow(0 0 20px #121212);
+    text-transform: uppercase;
+}
+
+main .mapa {
+    filter: drop-shadow(0 0 20px #121212);
+
+}
+
+.col{
+  filter: drop-shadow(0 0 20px #121212);
+}
+
+.destacado {
+  font-size: 25px;
+  font-family: 'BIZ UDPMincho', serif;
+}
+
+.card-text{
+  text-align: center;
+  font-family: 'BIZ UDPMincho', serif;
+}
+
+/* Reserva de arroz */
+
+.contactanos_page {
+    width: 100%;
+    height: auto;
+    }
+    .contactanos_page .container_contactacnos_page {
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px;
+      width: auto; 
+      
+    }
+      .contactanos_page .container_contactacnos_page .title_contactanos {
+        letter-spacing: 3.5px;
+        width: 100%;
+        color: #0B0B0B;
+        text-align: center;
+        margin: 15px;
+        font-size: 35px;
+        font-family: "Marcelius"; 
+        filter: drop-shadow(0 0 20px #121212);
+      }
+      .contactanos_page .container_contactacnos_page .img_arroz_contactanos {
+        width: auto;
+        max-height: 600px;
+        border-radius: 5%;
+        left: 10px;
+        filter: drop-shadow(0 0 20px #121212);
+        position: relative; }
+      .contactanos_page .container_contactacnos_page form {
+        position: relative;
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        align-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 2px solid #CCC;
+        border-radius: 1em;
+        font-family: "Caladea";
+        width: 36.5%;
+        height: auto;
+        padding: 1em;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+        .contactanos_page .container_contactacnos_page form ul {
+          list-style: none;
+          padding: 0;
+          margin-left: 29px;
+          width: 100%; }
+          .contactanos_page .container_contactacnos_page form ul .nombre {
+            border-radius: 5px;
+            width: 100%; }
+          .contactanos_page .container_contactacnos_page form ul li + li {
+            margin-top: 1em;
+            width: 100%; }
+            .contactanos_page .container_contactacnos_page form ul li + li input {
+              width: 100%;
+              vertical-align: top;
+              border-radius: 5px; }
+            .contactanos_page .container_contactacnos_page form ul li + li input:focus {
+              border-color: #0B0B0B; }
+            .contactanos_page .container_contactacnos_page form ul li + li label .valores {
+              vertical-align: top;
+              
+              width: 5%;
+              border-radius: 5px; }
+              .contactanos_page .container_contactacnos_page form ul li + li textarea:focus {
+                border-color: #0B0B0B; }
+          .contactanos_page .container_contactacnos_page form ul .button_enviar, .contactanos_page .container_contactacnos_page form ul .button_limpiar {
+            padding: 9px 15px;
+            letter-spacing: 1.5px;
+            display: inline;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            border-radius: 2em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Caladea', serif;
+            font-weight: 300;
+            color: #F5F5F5;
+            background-color: #33093ad5;
+            text-align: center;
+            transition: all 0.2s; }
+            .contactanos_page .container_contactacnos_page form ul .button_enviar:hover, .contactanos_page .container_contactacnos_page form ul .button_limpiar:hover {
+              background-color: #704279d5; }
+
+.horario_de_atencion{
+        background-color: white;
+        filter: drop-shadow(2px 4px 6px black);
+        margin: 44px 0 0 85px;
+        width: 35%;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+/* Box Scroll to top */   
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkviolet;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: -9px 10px 4px 0px rgba(45, 54, 65, 0.75);
+}
+
+#myBtn:hover {
+  background-color: orange;
+}
+
+.title {
+  letter-spacing: 3.5px;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  font-family: "Caladea"; 
+  margin-top: 20px;
+}
+
+  .subtitulos {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 30px 45px 35px 85px;
+    letter-spacing: 1px;
+    color: #0B0B0B;
+    font-family: "Caladea"; }
+
+/*Mobile*/
+
+@media (max-width: 457px) {
+                    body {
+                      padding: 0%; }
+                    .brand{
+                      right: 20px;
+                      }
+                    header .navegation {
+                      right: 40px;
+                      margin-top: 20px;
+                      }
+                    .titulo_home_page {
+                          font-size: 25px;
+                          font-family: 'BIZ UDPMincho', serif;
+                          text-align: center;
+                          max-width: 385px;
+                          margin-top: 40px;
+                          margin-left: 0px;
+                          margin-bottom: 50px;
+                        }
+                        .main_como_llegar {
+                          display: flex;
+                          flex-wrap: wrap;
+                          gap: 60px;
+                        }
+                        header .flex-container ul {
+                          position: relative;
+                          display: flex;
+                          align-items: center;
+                          width: 300%;
+                          top: 72px;
+                          left: -275px;
+        
+                      }
+                      header {
+                        background-color: black;
+                        position: relative;
+                        display: flex;    
+                        filter: drop-shadow(0 0 20px #121212);
+                        width: 100%;
+                        z-index: 2400;
+                      
+                    }
+                    .flex-container .menu {
+                      display: flex; }
+                    .menu {
+                      width: 45px;
+                      height: 29px;
+                      cursor: pointer;
+                      display: none;
+                      align-items: center;
+                      flex-direction: column;
+                      justify-content: space-between;
+                      position: absolute;
+                      top: 30px;
+                      right: 1rem; }
+                    .menu .menu_hamburger {
+                      width: 100%;
+                      height: 2px;
+                      border-radius: 99px;
+                      background: whitesmoke;
+                      transition: 0.3s ease;
+                      transform-origin: left; }
+                    :nth-child(3) {
+                      transform-origin: left; }
+                    .active .menu_hamburger {
+                      background: dodgerblue; }
+                    .active .menu_hamburger:nth-child(1) {
+                      transform: rotate(40deg); }
+                    .active .menu_hamburger:nth-child(3) {
+                      transform: rotate(-40deg); }
+                    .active .menu_hamburger:nth-child(2) {
+                      transform: scale(0); }
+                    .active header {
+                      transform: down(2s);
+                      height: 426px; }
+
+                      .flex-container ul {
+                        --height: 0px;
+                        flex-direction: column;
+                        position: absolute;
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.7);
+                        align-items: center;
+                        left: 0;
+                        top: 20%;
+                        height: var(--height);
+                        z-index: 160;
+                        transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+                      .flex-container ul.active {
+                        --height: calc(
+                        (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+                      );
+                        transition: 1s ease; }
+                      .flex-container ul li {
+                        width: 100%;
+                        text-align: center; }
+                      .flex-container ul li a {
+                        width: 110%;
+                        text-transform: capitalize; }
+                      header .flex-container ul .content {
+                        position: relative;
+                        top: 5px;
+                        width: 120px;
+                        height: 44px;
+                        display: flex;
+                        background-color: #F4DAF6;
+                        justify-content: flex-end;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        margin: 1%; 
+                        align-items: center;
+                      } 
+                      
+                        .brand {
+                          display: none;
+                        }
+                        .brand_mobile {
+                          display: inline;
+                          width: 70%;
+                          margin: 39px 0 20px 10px;
+                          filter: drop-shadow(0 0 20px #121212);
+                        }
+
+                    .foto_inicio {
+                          width: 70%;
+                          }
+                    main .titulo_como_llegar {
+                          padding: 10px;
+                          font-size: 35px;
+                        }
+                    .box_home_page {
+                      display: flex;
+                      justify-items: center;
+                      justify-content: space-around;
+                      align-content: flex-start;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                    }
+                    .bn5 {
+                      margin-bottom: 43px;
+                    }
+                    .rating{
+                      margin-top: 20px;
+                    }
+                    .text-muted{
+                      font-size: 25px;
+                    }
+                    .stars{
+                      font-size: 20px;
+                      color: yellow;
+                      filter: drop-shadow(0 0 20px #121212);
+                    }
+                    main .mapa {
+                      filter: drop-shadow(0 0 20px #121212);
+                      width: 80%;
+                      height: auto;
+                  }
+                  .contactanos_page .container_contactacnos_page .img_arroz_contactanos {
+                    left: 0px;
+                    }
+
+                    .contactanos_page .container_contactacnos_page form {
+                      font-family: "Caladea";
+                      width: 80%;
+                      }
+                  input .valores {
+                    width: 0%;
+                  }
+                  .horario{
+                    margin-top: 5px;
+                    filter: drop-shadow(0 0 20px #121212);
+                  }
+                  .horario_de_atencion{
+                    background-color: white;
+                    filter: drop-shadow(2px 4px 6px black);
+                    margin: 44px;
+                    width: 90%;
+                    font-family: 'BIZ UDPMincho', serif;
+                      padding: 10px;
+                  }
+      }

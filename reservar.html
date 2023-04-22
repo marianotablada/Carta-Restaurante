@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="brenes, restaurante, picoteo, comida premium, comida calidad, bar">
+		<meta name="description" content="restaurante de comida Gourmet">
+        <link rel="icon" href="images/rotulo.ico">
+		<title>Puro Picoteo Gourmet</title>
+        <link rel="stylesheet" media="all" href="style.css">
+		<link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--iconos-->
+		<script defer src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
+</head>
+<body>
+	<header>
+        <a href="index.html"><img src="images/brand.png" class="animate__animated animate__backInLeft brand"></a>
+        <a href="index.html"><img src="images/brand_mobile.png" class="animate__animated animate__backInLeft brand_mobile"></a>
+        <nav class="animate__animated animate__fadeInDown flex-container navegation">
+            <ul id="nav">
+            <li class="content">
+                <a href="index.html">
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+            <li class="content">
+                <a href="reservar.html">
+                    <span class="text" style="color: brown;">Reservar Arroz</span>
+                </a>
+            </li>
+            <li class="content">
+                <a href="carta.html">
+                    <span class="text">Carta</span>
+                </a>
+            </li>
+            <li class="content">
+                <a href="comollegar.html">
+                    <span class="text">Cómo llegar</span>
+                </a>
+            </li>
+            </ul>
+            <div class="menu" id="menu">
+                <span class="menu_hamburger"></span>
+                <span class="menu_hamburger"></span>
+                <span class="menu_hamburger"></span>
+            </div>
+    </nav>
+    </header>
+    <main class="contactanos_page">
+            <div class="vector1_contactanos_page"></div>
+            <div class="vector2_contactanos_page"></div>
+            <div class="vector3_contactanos_page"></div>
+        <div class="container_contactacnos_page">
+            <h1 class="animate__animated animate__fadeInUp title_contactanos">Completa el formulario y reserva nuestros arroces</h1>
+            <img src="images/foto_sección_eventos.jpeg" alt="foto de arroz" class="img_arroz_contactanos">
+            <form action="" method="" enctype="text/plain" name="contact" netlify>
+                <ul class="">
+                    <li>
+                    <input type="text" placeholder="Nombre y Apellido" class="nombre">
+                    </li>
+                    <li>
+                    <input type="email" id="-mail" required placeholder="E-mail">
+                    </li>
+                    <li>
+                    <input type="tel" id="tel" placeholder="Número de teléfono" required>
+                    </li>
+                    <li>
+                        <input type="date" id="fecha" placeholder="Seleccione el día" required>
+                    </li>
+                    <li>
+                        <input type="time" id="hora" placeholder="Seleccione el horario" required>
+                    </li>
+                    <li>
+                        <label>¿Qué arroz te gustaría reservar?:
+                            <br>
+                            <input type="checkbox" value="montaña" class="valores" id="valores" name="cafe">Montaña (*fotografía)
+                            <br>                            
+                            <input type="checkbox" value="caldoso" class="valores" id="mate" name="mate">Caldoso
+                            <br>
+                            <input type="checkbox" value="de mariscos" class="valores" id="mate" name="mate">De Mariscos
+                            <br>
+                        <label>¿Para cuántas personas es?:</label>
+                        <input type="number" required>
+                        </label>
+                    </li>
+                    <input class="button_enviar" type="submit" value="Enviar">
+                    <button class="button_limpiar" type="reset">Limpiar datos</button>
+                </ul>
+                </form>
+    </main>
+	<footer>
+        <div class="footer_container">
+                <div class="copyright">
+                    <p>© 2023 Copyright<br><b>Tablada Mariano Eric</b><br>
+                    <a href="https://github.com/marianotablada"><i class="fa-brands fa-2x fa-github" style="color: #0B0B0C;"></i></a></p>
+                </div>
+                <div class="redes">
+                    <p class="titulo_footer">Puedes Seguirnos</p>
+                    <a href="https://www.facebook.com/ymientrastanto.bebemos/"><i class="fa-brands fa-3x fa-facebook-square"></i></a>
+                    <i class="fa-brands fa-3x fa-whatsapp" style="color: #075E54;"></i>
+                    <a href="https://www.instagram.com/puropicoteobrenes/"><i class="fa-brands fa-3x fa-instagram" style="color: whitesmoke;"></i></a>
+                </div>
+                <div class="horario">
+                    <p>Nuestro horario de atención es:</p>
+                    <p>Jueves a Lunes de 12:00 a 16:00 - 20:00 a 00:00</p>
+                    <p>Martes de 12:00 a 16:00, cerrado por la noche</p>
+                    <p>Miércoles cerrado</strong></p>
+                </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
