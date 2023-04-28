@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BIZ+UDPMincho&family=Cinzel:wght@400;600&family=Cormorant+SC:wght@700&family=Dancing+Script&family=Italiana&family=Lobster&family=Major+Mono+Display&family=Marcellus&family=Noto+Serif+HK:wght@400;500;600;700;800;900&family=Qwigley&display=swap');
 
-.destacado
-
 :root {
 font-family: 'Abril Fatface', cursive;
 font-family: 'BIZ UDPMincho', serif;
@@ -28,6 +26,10 @@ header {
     position: relative;
     display: flex;    
     filter: drop-shadow(0 0 20px #121212);
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
 
 .brand {
@@ -73,6 +75,29 @@ header .flex-container ul .content .text {
 }
 
 
+/*Scroll barra */
+
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #8821a1;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+
 .box_home_page {
         position: relative;
         display: flex;
@@ -81,18 +106,6 @@ header .flex-container ul .content .text {
         flex-wrap: wrap;
         text-align: center;
           }
-
-/*
-.box_home_page {
-    display: grid;
-    grid-gap: 35px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-    
-    text-transform: uppercase;
-    }
-*/
-
 
 .titulo_primero{
       font-size: 35px;
@@ -131,15 +144,34 @@ header .flex-container ul .content .text {
     width: 100%;
     filter: drop-shadow(0 0 20px #121212);
 }
-      /*
-.contenedor_boton {
-      width: 25%;
-      }
-*/
+
 .contenedor_imagen_home_page{
   width: 100%;
 }
 
+/*
+#toastBox {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.toast{
+  width: 340px;
+  height: 80px;
+  background-color: white;
+  font-weight: 500;
+  margin: 15px 0;
+  filter: drop-shadow(0 0 20px #121212);
+  background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61));
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+}
+*/
 
 /*Boton Ver la Carta*/
 
@@ -219,7 +251,6 @@ header .flex-container ul .content .text {
   top: 0;
   border-radius: 10px;
 }
-
 
 /*Boton "como llegar" */
 .bn6 {
@@ -472,14 +503,13 @@ footer .footer_container .redes {
         padding-top: 5px;
         /*background-color: #fd5949;*/
         width: 30%;
+        gap: 15px;
     }
 footer .footer_container .redes .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     border-radius: 30%; }
 footer .footer_container .redes .titulo_footer {
     font-size: 1.2rem; }
-
-
 
 
 main .titulo_como_llegar {
@@ -611,6 +641,50 @@ main .mapa {
         border-radius: 10px;
       }
 
+.toast_container {
+  position: fixed;
+  top: -250px;
+  width: 90%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  font-family: 'Marcellus', serif;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 20px #121212);
+  padding: 0 16px;
+  transform: translateX(50%);
+  gap: 10px;
+  transition: all 1800ms ease;
+  z-index: 80000;
+  text-transform: uppercase;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+
+.activeNew {
+  top: 30px;
+}
+
+.exclamation {
+  color: red; 
+  z-index: 800;
+}
+
+#closed{
+  cursor: pointer;
+  z-index: 800;
+}
+
+.toast-container p{
+  font-family: 'Marcellus', serif;
+  font-size: 18px;
+  z-index: 800;
+  
+}
+
+
 /* Box Scroll to top */   
 #myBtn {
   display: none;
@@ -651,6 +725,38 @@ main .mapa {
     color: #0B0B0B;
     font-family: "Caladea"; }
 
+#iconFacebook{
+    color: #1b80d2f6;
+    background-color: whitesmoke;
+    border-radius: 25px;
+  }
+
+#iconWhatsapp {
+  color: #0f9576f6;
+  background-color: whitesmoke;
+  border-radius: 25px;
+}
+
+#iconInstagram{
+  color: whitesmoke;
+}
+
+#fotos_grandes{
+  width: 50%;
+}
+
+#foto_ramon_bilbao{
+  width: 85%;
+}
+#foto_biga_de_luberri{
+  width: 54.5%;
+}
+
+#foto_finca_la_montesca{
+  width: 57%;
+}
+
+
 /*Mobile*/
 
 @media (max-width: 457px) {
@@ -682,9 +788,10 @@ main .mapa {
                           display: flex;
                           align-items: center;
                           width: 300%;
-                          top: 72px;
+                         /* top: 72px; */
                           left: -275px;
-        
+                          gap: 10px;
+                          margin: 15% 0% 65px 0%;
                       }
                       header {
                         background-color: black;
@@ -755,7 +862,7 @@ main .mapa {
                       header .flex-container ul .content {
                         position: relative;
                         top: 5px;
-                        width: 120px;
+                       /* width: 120px; */
                         height: 44px;
                         display: flex;
                         background-color: #F4DAF6;
@@ -775,6 +882,16 @@ main .mapa {
                           margin: 39px 0 20px 10px;
                           filter: drop-shadow(0 0 20px #121212);
                         }
+                        .toast_container {
+                          max-width: 349px;
+                          font-size: 1rem;
+                          transform: translateX(10%);
+                        }
+                        .activeNew {
+                          top: 250px;
+                          transform: translateX(10%);
+                          
+                      }
 
                     .foto_inicio {
                           width: 70%;
@@ -832,5 +949,20 @@ main .mapa {
                     width: 90%;
                     font-family: 'BIZ UDPMincho', serif;
                       padding: 10px;
+                  }
+                  #fotos_grandes {
+                      max-width: 45%;
+                  }
+                  .card-img-top{
+                    max-width: 80%;
+                  }
+                  #foto_ramon_bilbao{
+                    max-width: 45%;
+                  }
+                  #foto_biga_de_luberri{
+                    max-width: 45%;
+                  }
+                  #foto_finca_la_montesca{
+                    max-width: 45%;
                   }
       }

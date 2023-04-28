@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="brenes, restaurante, picoteo, comida premium, comida calidad, bar">
+		<meta name="description" content="restaurante de comida Gourmet">
+        <link rel="icon" href="images/rotulo.ico">
+		<title>Puro Picoteo Gourmet</title>
+      <link rel="stylesheet" media="all" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css"/>
+    <!--iconos-->
+		<script defer src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v6.4.0/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/abf9c2b7d4.js" crossorigin="anonymous"></script> <!--link de inconos-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+    <a href="index.html"><img src="images/brand.png" class="animate__animated animate__backInLeft brand"></a>
+    <a href="index.html"><img src="images/brand_mobile.png" class="animate__animated animate__backInLeft brand_mobile"></a>
+    <nav class="animate__animated animate__fadeInDown flex-container navegation">
+        <ul id="nav" style="padding-left: 0rem;">
+        <li class="content">
+            <a href="index.html">
+                <span class="text">Inicio</span>
+            </a>
+        </li>
+        <!-- <li class="content">
+            <a href="reservar.html">
+                <span class="text">Reservar Arroz</span>
+            </a>
+        </li>
+      -->
+        <li class="content">
+            <a href="carta.html">
+                <span class="text">Carta</span>
+            </a>
+        </li>
+        <li class="content">
+          <a href="#">
+            <span class="text" style="color: brown;">Vinos</span>
+          </a>
+      </li>
+        <li class="content">
+            <a href="comollegar.html">
+                <span class="text">Cómo llegar</span>
+            </a>
+        </li>
+        </ul>
+        <div class="menu" id="menu">
+            <span class="menu_hamburger"></span>
+            <span class="menu_hamburger"></span>
+            <span class="menu_hamburger"></span>
+        </div>
+</nav>
+<div class="toast_container" id="toast_container" style="display: none;">
+  <i class="fa-solid fa-circle-exclamation fa-2xl exclamation"></i>
+  <p>Hoy Fuera de Carta:
+      <br>&#128523 Venado y Buñuelos de Bacalao,
+      <br> no te quedes sin probarlos!</p>
+  <div id="closed">
+    <i class="fa-solid fa-xmark fa-lg"></i>
+  </div>
+</div>
+</header>
+    <main class="tienda_page">
+        <h1 class="animate__animated animate__fadeInUp title">Vinos</h1>        
+        <h2 class="animate__animated animate__slideInLeft subtitulos">Tintos - Ribera del Duero</h2>
+        <section>
+            <div class="album py-8">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="card ">
+                      <h2><span class="destacado">Valdubon</span></h2>
+                      <img src="images/foto_valdubon.jpeg" id="fotos_grandes" alt="vino_tinto_valdubon" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                          <p class="card-text">Roble 2022
+                            <br>🍷 Copa 3,20 €
+                            <br>Botella 13,50 €</p>                                                    
+                            <div class="d-flex justify-content-between align-items-center" style="height: 30px; text-align: center;">
+                              <div class="heart"></div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col">
+                    <div class="card">
+                      <h2><span class="destacado">Pruno</span></h2>
+                      <img src="images/foto_pruno.jpeg" id="fotos_grandes" alt="vino_tinto_pruno" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                        <p class="card-text">Finca Villacreces 2020
+                          <br>Botella 20,00 €
+                          <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                            <div class="heart"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <h2><span class="destacado">Vegazar</span></h2>
+                      <img src="images/foto_vegazar.jpeg" alt="vino_tinto_vegazar_ribera_del_duero" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                          <p class="card-text">Roble Selección 2020
+                            <br>🍷 Copa 3,90 €
+                            <br>Botella 13,00 €
+                            <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                              <div class="heart"></div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <h2><span class="destacado">Celeste</span></h2>
+                      <img src="images/foto_celeste_roble.jpeg" id="fotos_grandes" alt="vino_tinto_celeste" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                          <p class="card-text">Roble 2020
+                            <br>Botella 18,00 €
+                            <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                              <div class="heart"></div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <h2><span class="destacado">Campustauru</span></h2>
+                      <img src="images/foto_campustauru.jpeg" id="fotos_grandes" alt="vino_tino_roble_campustauru" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                        <p class="card-text">Martín Berasategui, Roble 
+                          <br>Botella 15,00 €
+                        </p>
+                          <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                            <div class="heart"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <h2><span class="destacado">Pago de los Capellanes</span></h2>
+                      <img src="images/foto_pago_de_los_capellanes.jpeg" id="fotos_grandes" alt="vino_tino_pago_de_los_capellanes" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                      <div class="card-body">
+                        <p class="card-text">Crianza 2018
+                          <br>Botella 35,00 €
+                        </p>
+                          <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                            <div class="heart"></div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                  <h2 class="subtitulos">Tintos - Rioja</h2>
+                  <section>
+                      <div class="album py-5">
+                        <div class="container">
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Campo Viejo</span></h2>
+                                <img src="images/foto_campo_viejo.jpeg" alt="vino_campo_viejo" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false">
+                                <div class="card-body">
+                                  <p class="card-text">Tempranillo
+                                    <br>🍷 Copa 3,20 € 
+                                    <br>Botella 10,00 €
+                                  </p>
+                                  <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                    <div class="heart"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Ramón Bilbao</span></h2>
+                                <img src="images/foto_ramon_bilbao.jpeg" id="foto_ramon_bilbao" alt="vino_ramon_bilbao" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="active"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Reserva 2015
+                                    <br>Botella 25,50 €</p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Biga de Luberri</span></h2>
+                                <img src="images/foto_biga_de_luberri.jpeg" id="foto_biga_de_luberri" alt="vino_biga_de_luberri" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Familia Monje Amestoy, Crianza 2018
+                                    <br>Botella 17,00 €</p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Finca La Montesca</span></h2>
+                                <img src="images/foto_vino_montesa.jpeg" id="foto_finca_la_montesca" alt="vino_la_montesa" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false">
+                                <div class="card-body">
+                                  <p class="card-text">Crianza 2019
+                                    <br>Botella 23,00 € </p>
+                                  <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                    <div class="heart"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                  </section>
+                  <h2 class="subtitulos">Blancos</h2>
+                  <section>
+                      <div class="album py-5">
+                        <div class="container">
+                          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Canto 5</span></h2>
+                                <img src="images/foto_canto_5.jpeg" alt="vino_freezante" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="active"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Dulce
+                                    <br>Copa 3,00 €
+                                    <br>Botella 13,50 €</p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Diez Siglos</span></h2>
+                                <img src="images/foto_diez_siglos.jpeg" alt="vino_blanco_verdejo_diez_siglos" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Verdejo
+                                    <br>Copa 3,00 €
+                                    <br>Botella 13,00 €</p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Marquez de Pluma</span></h2>
+                                <img src="images/foto_maquez_de_pluma.jpeg" alt="vino_blanco_marquez_de_pluma" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false">
+                                <div class="card-body">
+                                  <p class="card-text">Verdejo 2021
+                                    <br>Botella 12,00 € </p>
+                                  <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                    <div class="heart"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Arabe</span></h2>
+                                <img src="images/foto_arabe.jpeg" alt="vino_blacno_arabe" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false">
+                                <div class="card-body">
+                                  <p class="card-text">Blanco Dulce 
+                                    <br>Botella 20,00 € </p>
+                                  <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                    <div class="heart"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Palomo Cojo</span></h2>
+                                <img src="images/foto_palomo_cojo.jpeg" alt="vino_blanco_palomo_cojo" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Verdejo Seco 
+                                    <br>Botella 14,00 € </p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Barredero</span></h2>
+                                <img src="images/foto_barrederi_vino_blanco.jpeg" id="fotos_grandes" alt="vino_blanco_barredero" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Condado de Huelva, 100% Zulema Blanco Joven  
+                                    <br>Botella 12,00€ </p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Celeste (Rueda)</span></h2>
+                                <img src="images/foto_celeste_verdejo.jpeg" id="fotos_grandes" alt="vino_blanco_celeste" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="active"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    <br>Botella 15,00 € </p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Paco y Lola</span></h2>
+                                <img src="images/foto_paco_lola.jpeg" id="fotos_grandes" alt="vino_blanco_paco_y_lola" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="active"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    <br>Botella 20,00 € </p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <h2><span class="destacado">Entrechuelo</span></h2>
+                                <img src="images/foto_entrechuelos_chardonnay.jpeg" alt="vino_blanco_entrechuelo" class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="active"><rect width="100%" height="100%" fill="#55595c"/>
+                                <div class="card-body">
+                                  <p class="card-text">Chardonnay, Tierra de Cádiz
+                                    <br>Botella 12,00 € </p>
+                                    <div class="d-flex justify-content-between align-items-center" style="height: 30px;">
+                                      <div class="heart"></div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </section>
+                        
+                                <button onclick="topFunction()" id="myBtn" title="Go to top">Volver arriba</button>
+                                
+    </main>
+	<footer>
+        <div class="footer_container">
+                <div class="copyright">
+                    <p>© 2023 Copyright<br><b>Tablada Mariano Eric</b><br>
+                    <a href="https://github.com/marianotablada"><i class="fa-brands fa-2x fa-github" style="color: #0B0B0C;"></i></a></p>
+                </div>
+                <div class="redes">
+                    <p class="titulo_footer">Puedes Seguirnos</p>
+                    <a href="https://m.facebook.com/people/Puro-picoteo/100086864526806/"><i class="fa-brands fa-3x fa-facebook-square" id="iconFacebook"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=34600813288"><i class="fa-brands fa-3x fa-whatsapp" id="iconWhatsapp"></i></a>
+                    <a href="https://www.instagram.com/puropicoteobrenes/"><i class="fa-brands fa-3x fa-instagram" style="color: whitesmoke;"></i></a>
+                </div>
+                <div class="horario">
+                    <p style="margin-bottom: 0rem;">Nuestro horario de atención es:</p>
+                    <p style="margin-bottom: 0rem;">Jueves a Lunes de 12:00 a 16:00 - 20:00 a 00:00</p>
+                    <p style="margin-bottom: 0rem;">Martes de 12:00 a 16:00, cerrado por la noche</p>
+                    <p style="margin-bottom: 0rem;">Miércoles cerrado</strong></p>
+                </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+     $(function() {
+  $(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
+    </script>
+</body>
+</html>
