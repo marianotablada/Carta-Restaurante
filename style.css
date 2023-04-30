@@ -105,6 +105,7 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
+        flex-direction: column;
           }
 
 .titulo_primero{
@@ -126,7 +127,7 @@ body::-webkit-scrollbar-thumb {
       /*text-align: center;*/
       /*grid-column: span 2;*/
       max-width: 70%;
-      margin-left: 14%;
+      
       color:rgb(84, 84, 84);
       filter: drop-shadow(0 0 20px #121212);
       }
